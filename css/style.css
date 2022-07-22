@@ -1,0 +1,441 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+header {
+   position: absolute;
+   width: 100%;
+   padding: 60px 0px 60px 0px;
+}
+
+.container {
+   max-width: 1200px;
+   margin: auto;
+}
+
+.header-wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.navigation {
+   display: flex;
+   justify-content: flex-end;
+
+   list-style: none;
+}
+
+.active {
+   border-bottom: 3px #F1CDB3 solid;
+   color: #FAFAFA;
+}
+
+.navigation a {
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 24px;
+   color: #CDCDCD;
+   text-decoration: none;
+   margin-left: 35px;
+}
+
+.header-wrapper__logo a {
+   font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   letter-spacing: 0.1em;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 15px;
+   color: #FFFFFF;
+}
+
+span {
+   display: block;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: 400;
+   font-size: 32px;
+   line-height: 35px;
+   letter-spacing: 0.06em;
+   color: #F1CDB3;
+
+}
+
+.wrapper-first {
+   background-image: linear-gradient(to bottom left, rgba(37, 16, 0, 1), rgba(125, 96, 75, 1))
+}
+
+.wrapper-first .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   padding-top: 180px;
+}
+
+.wrapper-first__text {
+   max-width: 38%;
+}
+
+.wrapper-first__dogfhoto {
+   max-width: 58%;
+}
+
+.wrapper-first__text h1 {
+   max-width: 325px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #FFFFFF;
+   font-weight: 400;
+   font-size: 44px;
+   line-height: 57px;
+}
+
+.wrapper-first__text p {
+   font-family: Arial, Helvetica, sans-serif;
+   color: #CDCDCD;
+   font-size: 15px;
+   line-height: 24px;
+   margin: 42px 0px 56px 0px;
+}
+
+.wrapper-first__text a {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   padding: 15px 45px;
+   text-decoration: none;
+   color: #292929;
+   font-weight: 400;
+   font-size: 17px;
+   line-height: 22px;
+   letter-spacing: 0.06em;
+   background: #F1CDB3;
+   border-radius: 100px;
+}
+
+.wrapper-aboutshelter {
+   padding: 80px 0px 100px 0px;
+}
+
+.wrapper-aboutshelter .container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.wrapper-aboutshelter__cat-and-dog {
+   max-width: 25%;
+}
+
+.wrapper-aboutshelter__text {
+   max-width: 35.5%;
+   margin-left: 125px;
+}
+
+.wrapper-aboutshelter__text h2 {
+   max-width: 370px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #545454;
+   letter-spacing: 0.06em;
+   font-weight: 400;
+   font-size: 35px;
+   line-height: 45px;
+}
+
+.wrapper-aboutshelter__text p {
+   font-family: Arial, Helvetica, sans-serif;
+   color: #4C4C4C;
+   font-size: 15px;
+   line-height: 24px;
+   margin-top: 32px;
+}
+
+
+.wrapper-ourfriends {
+   padding: 80px 0px 100px 0px;
+   background: #F6F6F6;
+}
+
+.wrapper-ourfriends__options {
+   display: flex;
+   justify-content: space-around;
+
+
+}
+
+.wrapper-ourfriends .container h2 {
+   margin-bottom: 60px;
+   text-align: center;
+   letter-spacing: 0.06em;
+   color: #545454;
+   font-weight: 400;
+   font-size: 35px;
+   line-height: 45px;
+}
+
+.pet-card {
+   background-color: #FAFAFA;
+   flex-basis: 270px;
+   text-align: center;
+   padding-bottom: 30px;
+}
+
+.pet-card:hover {
+   background-color: white;
+   cursor: pointer;
+}
+
+.pet-card p {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   margin: 30px 0px;
+   letter-spacing: 0.06em;
+   font-size: 20px;
+   line-height: 23px;
+}
+
+.learn-more {
+   display: inline-block;
+   padding: 15px 45px;
+   border: 2px #F1CDB3 solid;
+   border-radius: 100px;
+   color: #292929;
+   text-decoration: none;
+   letter-spacing: 0.06em;
+   font-size: 17px;
+   line-height: 22px;
+}
+
+.learn-more:hover {
+   background-color: rgba(253, 220, 196, 1);
+}
+
+.button-gettonow {
+   text-align: center;
+   margin-top: 90px;
+}
+
+.gettoknow {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   padding: 15px 45px;
+   background-color: #F1CDB3;
+   border-radius: 100px;
+   text-decoration: none;
+   color: #292929;
+}
+
+.gettoknow:hover {
+   background-color: rgba(253, 220, 196, 1);
+}
+
+.pet {
+   position: relative;
+}
+
+.nav-button-right {
+   position: absolute;
+   top: 50%;
+   right: 0px;
+   width: 52px;
+   height: 52px;
+   cursor: pointer;
+   border-radius: 50%;
+   border: 2px solid #F1CDB3;
+   background-image: url(../img/arow.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+
+.nav-button-left {
+   position: absolute;
+   top: 50%;
+   left: 0px;
+   width: 52px;
+   height: 52px;
+   cursor: pointer;
+   border-radius: 50%;
+   border: 2px solid #F1CDB3;
+   background-image: url(../img/arrowleft.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.nav-button-left:hover {
+   background-color: #FDDCC4;
+}
+
+.nav-button-right:hover {
+   background-color: #FDDCC4;
+}
+
+.wrapper-helpour {
+   padding: 80px 0px 98px 0px;
+}
+
+.help-options {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.pet-help {
+   margin: 55px 60px 0px 60px;
+   text-align: center;
+}
+
+.pet-help p {
+   margin-top: 30px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #545454;
+   letter-spacing: 0.06em;
+   font-size: 20px;
+   line-height: 23px;
+}
+
+.wrapper-helpour__title {
+   text-align: center;
+}
+
+.wrapper-helpour h2 {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #545454;
+   letter-spacing: 0.06em;
+   font-weight: 400;
+   font-size: 35px;
+   line-height: 45px;
+   margin-bottom: 5px;
+}
+
+.wrapper-info {
+   padding: 81px 0px 101px 0px;
+}
+
+.donation {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.wrapper-info__fhoto-dog {
+   width: 56.5%;
+   text-align: right;
+}
+
+.wrapper-info__tekst {
+   width: 43.5%;
+}
+
+.wrapper-info__tekst h2 {
+   max-width: 300px;
+   margin-bottom: 20px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #545454;
+   letter-spacing: 0.06em;
+   font-weight: 400;
+   font-size: 35px;
+   line-height: 45px;
+}
+
+.carts-info {
+   margin-bottom: 20px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #545454;
+   letter-spacing: 0.06em;
+   font-size: 15px;
+   line-height: 17px;
+
+}
+
+.carts {
+   background-image: url(../img/credit-card.svg);
+   background-repeat: no-repeat;
+   background-position: 15px center;
+   max-width: 350px;
+   background-color: #F1CDB3;
+   border-radius: 9px;
+   padding: 10px 15px 10px 60px;
+   margin-bottom: 20px;
+}
+
+.carts p {
+
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #545454;
+   letter-spacing: 0.06em;
+   font-size: 20px;
+   line-height: 23px;
+
+}
+
+.legal-information {
+   font-family: Arial, Helvetica, sans-serif;
+   font-style: italic;
+   color: #B2B2B2;
+   font-size: 12px;
+   line-height: 18px;
+   max-width: 380px;
+}
+
+.flex-wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+footer {
+   background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
+   padding-top: 40px;
+}
+
+footer h2 {
+   font-family: Georgia;
+   font-weight: 400;
+   font-size: 35px;
+   line-height: 45px;
+   letter-spacing: 0.06em;
+   color: #FFFFFF;
+   padding-top: 16px;
+   margin-bottom: 33px
+}
+
+footer .flex-wrapper>div {
+   width: 300px;
+}
+
+footer .flex-wrapper {
+   align-items: flex-start;
+}
+
+footer p {
+   min-height: 46px;
+   padding-left: 60px;
+   display: flex;
+   align-items: center;
+   color: #F1CDB3;
+   margin-bottom: 27px;
+}
+
+footer a {
+   color: #F1CDB3;
+   text-decoration: none;
+}
+
+footer .email {
+   background-image: url(../img/icon-email.svg);
+   background-repeat: no-repeat;
+   background-position: left center;
+}
+
+footer .tel {
+   background-image: url(../img/icon-phone.svg);
+   background-repeat: no-repeat;
+   background-position: left center;
+}
+
+footer .local {
+   background-image: url(../img/icon-marker.svg);
+   background-repeat: no-repeat;
+   background-position: left center;
+   padding-left: 42px;
+}
