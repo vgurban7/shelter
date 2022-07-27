@@ -11,6 +11,20 @@ header {
    padding: 60px 0px 60px 0px;
 }
 
+.menu-start {
+   display: none;
+}
+
+.burger {
+   border: white 1px solid;
+   width: 32px;
+   color: #FFFFFF
+}
+
+.center {
+   margin: 9px 0px;
+}
+
 .container {
    width: 1200px;
    margin: auto;
@@ -86,11 +100,12 @@ span {
 
 .fhoto-puppy img {
    display: block;
-}
-
-.wrapper-first__dogfhoto {
    max-width: 58%;
 }
+
+/* .wrapper-first__dogfhoto {
+   max-width: 58%;
+} */
 
 .wrapper-first__text h1 {
    max-width: 325px;
@@ -106,10 +121,11 @@ span {
    color: #CDCDCD;
    font-size: 15px;
    line-height: 24px;
-   margin: 42px 0px 56px 0px;
+   margin: 42px 0px;
 }
 
 .wrapper-first__text a {
+   display: inline-block;
    font-family: Georgia, 'Times New Roman', Times, serif;
    padding: 15px 45px;
    text-decoration: none;
@@ -122,6 +138,7 @@ span {
    border-radius: 100px;
 }
 
+/* ---------------------------------------------section ourfrend------------------------------------- */
 .wrapper-aboutshelter {
    padding: 80px 0px 100px 0px;
 }
@@ -159,7 +176,7 @@ span {
    margin-top: 25px;
 }
 
-/* ---------------------------------------------section ourfrend------------------------------------- */
+
 
 
 .wrapper-ourfriends {
@@ -179,6 +196,8 @@ span {
 
 .wrapper-ourfriends__options {
    display: flex;
+   justify-content: space-between;
+   flex-grow: 1;
 }
 
 .wrapper-ourfriends .container h2 {
@@ -194,19 +213,20 @@ span {
 
 .pet-card img {
    display: block;
+   width: 100%;
 }
 
 .pet-card {
    background-color: #FAFAFA;
-   flex-basis: 270px;
+   max-width: 270px;
    text-align: center;
    padding-bottom: 30px;
-   margin-right: 90px;
+   /* margin-right: 90px; */
 }
 
-.pet-card:last-child {
+/* .pet-card:last-child {
    margin-right: 0px;
-}
+} */
 
 
 .pet-card:hover {
@@ -445,7 +465,9 @@ footer .flex-wrapper>div {
 }
 
 footer .flex-wrapper {
+
    align-items: flex-start;
+
 }
 
 .footer-fhoto-dog img {
@@ -453,6 +475,9 @@ footer .flex-wrapper {
 }
 
 footer p {
+   font-family: 'Georgia';
+   line-height: 23px;
+   font-size: 20px;
    min-height: 46px;
    padding-left: 60px;
    display: flex;
@@ -489,10 +514,209 @@ footer .local {
    .container {
       max-width: 95%;
    }
+
+   .fhoto-puppy {
+      width: 60%;
+   }
+
+   .wrapper-first .container {
+      align-items: flex-end;
+   }
+
+   .wrapper-first__text {
+      margin-bottom: 100px;
+   }
+
+}
+
+@media(max-width: 1100px) {
+   .woody {
+      display: none;
+   }
+
+   .wrapper-ourfriends__options {
+      justify-content: space-around;
+   }
 }
 
 @media(max-width: 970px) {
-   footer .flex-wrapper>div {
+   footer .flex-wrapper {
+      flex-wrap: wrap;
+   }
+
+   footer .flex-wrapper .contacts {
+      width: 50%;
+   }
+
+   footer .flex-wrapper .footer-fhoto-dog {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+   }
+}
+
+@media(max-width: 900px) {
+
+   .wrapper-aboutshelter {
+      padding: 50px 0px;
+   }
+
+   .wrapper-ourfriends {
+      padding: 50px 0px;
+   }
+
+   .wrapper-helpour {
+      padding: 50px 0px;
+   }
+
+   .wrapper-info {
+      padding: 50px 0px;
+   }
+
+   .fhoto-puppy {
+      display: none;
+   }
+
+   .wrapper-first .container {
+      justify-content: space-around;
+
+   }
+
+   .wrapper-info__tekst {
+      width: auto;
+   }
+
+   .wrapper-info__fhoto-dog {
+      display: none;
+   }
+
+   .button-gettoknow {
+      margin-top: 30px;
+   }
+
+   .wrapper-first__text {
+      margin-top: 0px;
+      margin-bottom: 40px;
+   }
+
+   .wrapper-first__text {
       max-width: 50%;
+      text-align: center;
+   }
+
+   .wrapper-first__text h1 {
+      margin-right: 0px;
+      max-width: 100%;
+   }
+}
+
+@media(max-width: 820px) {
+   .jennifer {
+      display: none;
+   }
+
+   .nav-button-right {
+      margin-left: 10px;
+   }
+
+   .nav-button-left {
+      margin-right: 10px;
+   }
+}
+
+@media(max-width: 750px) {
+   .wrapper-aboutshelter {
+      padding: 35px 0px;
+   }
+
+   .wrapper-ourfriends {
+      padding: 35px 0px;
+   }
+
+   .wrapper-helpour {
+      padding: 35px 0px;
+   }
+
+   .wrapper-info {
+      padding: 35px 0px;
+   }
+
+   .wrapper-aboutshelter__cat-and-dog {
+      display: none;
+   }
+
+   .wrapper-aboutshelter__text {
+      margin-left: 0px;
+      max-width: 50%;
+   }
+}
+
+@media(max-width: 700px) {
+   .header-wrapper__menu {
+      display: none;
+   }
+
+   .menu-start {
+      display: block;
+   }
+
+   footer h2 {
+      font-size: 30px;
+   }
+
+   /* .carts p {
+      font-size: 14px;
+   } */
+
+
+   footer .flex-wrapper .first-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+   }
+
+   footer .flex-wrapper .last-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+   }
+}
+
+@media(max-width: 600px) {
+   footer .flex-wrapper .first-info {
+      align-items: flex-start;
+   }
+
+   footer .flex-wrapper .last-info {
+      align-items: flex-start;
+   }
+
+   .carts p {
+      font-size: 17px;
+   }
+}
+
+@media(max-width: 500px) {
+   .wrapper-first__text {
+      max-width: 100%;
+   }
+
+   .wrapper-aboutshelter__text {
+      max-width: 100%;
+   }
+
+   .wrapper-aboutshelter__text h2 {
+      max-width: 100%;
+   }
+
+}
+
+@media(max-width: 350px) {
+   .carts p {
+      font-size: 15px;
    }
 }
